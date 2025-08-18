@@ -20,8 +20,8 @@ jobs:
           server: ${{ secrets.FTP_HOST }} # ex) hlwemqth.hostingkr.com
           username: ${{ secrets.FTP_USER }} # FTP 아이디
           password: ${{ secrets.FTP_PASSWORD }} # FTP 비밀번호
-          protocol: ftps-legacy
-          port: 21
-          local-dir: ./
+          protocol: sftp
+          port: 22
+          local-dir: src/
           server-dir: public_html/ # 호스팅KR 웹 루트 경로
           timeout: 60000
